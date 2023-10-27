@@ -6,7 +6,7 @@ import { ImgFilm, Item, List } from './Cast.styled';
 const defaultImg =
   'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
 
-export const Cast = () => {
+const Cast = () => {
   const { movieId } = useParams();
   const [cast, setCast] = useState([]);
 
@@ -46,9 +46,10 @@ export const Cast = () => {
           </List>
         </div>
       )}
-      {cast.length !== 0 && (
+      {cast.length === 0 && (
         <div> We haven't information about cast of this movie </div>
       )}
     </>
   );
 };
+export default Cast;

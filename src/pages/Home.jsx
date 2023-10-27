@@ -3,7 +3,7 @@ import { getTrendingMovies } from 'Api';
 import Loader from 'components/Loader/Loader';
 import MovieList from 'components/MovieList/MovieList';
 
-export const Home = () => {
+const Home = () => {
   const [trendingMovies, setTrendingMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -33,3 +33,4 @@ export const Home = () => {
     </div>
   );
 };
+export default Home;

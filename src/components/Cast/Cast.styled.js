@@ -10,7 +10,7 @@ export const List = styled.ul`
 `;
 export const Item = styled.li`
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 69, 0, 0.5);
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   display: flex;
